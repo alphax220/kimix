@@ -1,3 +1,10 @@
+// =====================================================
+// TÉLÉCHARGEMENT DE KIMIX
+// ====================================================
+const GOOGLE_DRIVE_FILE_ID = "187n3qi2kHrMV0deMJfwQYNENc5yVvV4Y";
+
+const DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${GOOGLE_DRIVE_FILE_ID}`;
+
 /* =====================================================
    CONFIGURATION
 ===================================================== */
@@ -25,7 +32,7 @@ const WHATSAPP_NUMBER = "221775465436";
         "https://ton-domaine.com/download/kimix.exe";
 */
 
-const DOWNLOAD_URL = "DOWNLOAD_URL";
+
 
 
 
@@ -749,22 +756,15 @@ function setupWhatsApp() {
 function setupDownload() {
 
     const downloadButton =
-        document.getElementById(
-            "downloadBtn"
-        );
+        document.getElementById("downloadBtn");
 
-
-    if (
-        downloadButton &&
-        DOWNLOAD_URL &&
-        DOWNLOAD_URL !== "DOWNLOAD_URL"
-    ) {
-
-        downloadButton.href =
-            DOWNLOAD_URL;
-
+    if (!downloadButton) {
+        return;
     }
 
+    downloadButton.href = DOWNLOAD_URL;
+    downloadButton.setAttribute("target", "_blank");
+    downloadButton.setAttribute("rel", "noopener noreferrer");
 }
 
 
