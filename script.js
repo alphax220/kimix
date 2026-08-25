@@ -24,18 +24,8 @@ const WHATSAPP_NUMBER = "221775465436";
     const DOWNLOAD_URL =
         "https://ton-domaine.com/download/kimix.exe";
 */
-// =====================================================
-// TÉLÉCHARGEMENT DE KIMIX
-// =====================================================
-// Mets ici l'ID du fichier partagé sur Google Drive.
-// Exemple : https://drive.google.com/file/d/ABC123XYZ/view
-// L'ID est : ABC123XYZ
-const GOOGLE_DRIVE_FILE_ID = "1qUeIGrX85Kc5SIAUhMxfON8t0C4XHa2k";
 
-const DOWNLOAD_URL =
-    GOOGLE_DRIVE_FILE_ID !== "TON_ID_GOOGLE_DRIVE"
-        ? `https://drive.google.com/uc?export=download&id=${GOOGLE_DRIVE_FILE_ID}`
-        : "DOWNLOAD_URL";
+const DOWNLOAD_URL = "DOWNLOAD_URL";
 
 
 
@@ -249,128 +239,30 @@ const translations = {
             "DES OFFRES ADAPTÉES À VOTRE ACTIVITÉ",
 
         offersTitle:
-            "Commencez avec ce dont votre entreprise a besoin.",
+            "Accédez à Kimix selon la durée qui vous convient.",
 
         offersIntro:
-            "Une tarification simple pour les fabricants de boissons, de la petite unité à la PME structurée.",
+            "Une tarification simple et flexible : de 1 jour à 5 ans, avec des remises croissantes pour les engagements longs.",
 
 
-        tpeLabel:
-            "PETITE UNITÉ",
+        pricingLabel:
+            "ACCÈS KIMIX",
 
-        tpeSubtitle:
-            "Pour les petites unités de production de boissons",
+        pricingTitle:
+            "Choisissez votre durée",
 
-        month:
-            "mois",
+        pricingSubtitle:
+            "Un accès flexible, sans engagement mensuel obligatoire.",
 
-        tpeBenefit:
-            "Pour structurer votre production sans alourdir votre organisation.",
+        pricingBenefit:
+            "Plus la durée est longue, plus le coût mensuel est avantageux.",
 
-
-        tpe1:
-            "Produisez avec une meilleure visibilité sur vos matières premières",
-
-        tpe2:
-            "Calculez vos besoins avant de lancer une production",
-
-        tpe3:
-            "Identifiez rapidement ce qu'il faut commander",
-
-        tpe4:
-            "Centralisez vos recettes et vos réceptions",
-
-        tpe5:
-            "Suivez vos objectifs et vos coûts",
-
-        tpe6:
-            "1 utilisateur",
-
-        tpe7:
-            "Support client via WhatsApp",
-
-        chooseTpe:
-            "Choisir TPE",
+        choosePlan:
+            "Choisir mon accès",
 
 
         popular:
             "RECOMMANDÉ",
-
-
-        pmeLabel:
-            "ENTREPRISE EN CROISSANCE",
-
-        pmeSubtitle:
-            "Pour les entreprises avec une activité de production régulière",
-
-        month2:
-            "mois",
-
-        pmeBenefit:
-            "Pour piloter une activité de production régulière avec davantage de précision.",
-
-
-        pme1:
-            "Tout ce qui est inclus dans TPE",
-
-        pme2:
-            "Mieux suivre les productions et les quantités réellement obtenues",
-
-        pme3:
-            "Comparer le théorique et le réel",
-
-        pme4:
-            "Suivre les écarts de coûts et de Brix",
-
-        pme5:
-            "Structurer fournisseurs, lots et dates",
-
-        pme6:
-            "Travailler avec plusieurs utilisateurs",
-
-        pme7:
-            "Support prioritaire",
-
-        choosePme:
-            "Choisir PME",
-
-
-        customLabel:
-            "BESOINS SPÉCIFIQUES",
-
-        customSubtitle:
-            "Pour les entreprises ayant des besoins spécifiques",
-
-        quote:
-            "Sur devis",
-
-        customBenefit:
-            "Votre organisation est unique. Votre solution peut l'être aussi.",
-
-
-        custom1:
-            "Fonctionnalités et workflows adaptés à votre organisation",
-
-        custom2:
-            "Développements spécifiques",
-
-        custom3:
-            "Gestion avancée des utilisateurs et droits",
-
-        custom4:
-            "Intégration avec d'autres systèmes",
-
-        custom5:
-            "Déploiement et configuration personnalisés",
-
-        custom6:
-            "Accompagnement et formation",
-
-        custom7:
-            "Support personnalisé",
-
-        contactCustom:
-            "Discuter de mon besoin",
 
 
         roadmapKicker:
@@ -637,128 +529,30 @@ const translations = {
             "PLANS FOR YOUR BUSINESS",
 
         offersTitle:
-            "Start with what your business needs.",
+            "Access Kimix for the duration that suits you.",
 
         offersIntro:
-            "Simple pricing for beverage manufacturers, from small production units to structured SMEs.",
+            "Simple, flexible pricing: from 1 day to 5 years, with increasing discounts for longer commitments.",
 
 
-        tpeLabel:
-            "SMALL BUSINESS",
+        pricingLabel:
+            "KIMIX ACCESS",
 
-        tpeSubtitle:
-            "For small beverage production units",
+        pricingTitle:
+            "Choose your duration",
 
-        month:
-            "month",
+        pricingSubtitle:
+            "Flexible access with no mandatory monthly commitment.",
 
-        tpeBenefit:
-            "Structure your production without adding unnecessary complexity.",
+        pricingBenefit:
+            "The longer the duration, the lower the monthly equivalent cost.",
 
-
-        tpe1:
-            "Produce with better visibility on your raw materials",
-
-        tpe2:
-            "Calculate requirements before starting production",
-
-        tpe3:
-            "Quickly identify what needs to be ordered",
-
-        tpe4:
-            "Centralize recipes and receipts",
-
-        tpe5:
-            "Track targets and costs",
-
-        tpe6:
-            "1 user",
-
-        tpe7:
-            "WhatsApp customer support",
-
-        chooseTpe:
-            "Choose Small Business",
+        choosePlan:
+            "Choose my access",
 
 
         popular:
             "RECOMMENDED",
-
-
-        pmeLabel:
-            "GROWING BUSINESS",
-
-        pmeSubtitle:
-            "For companies with regular production activity",
-
-        month2:
-            "month",
-
-        pmeBenefit:
-            "Manage regular production with greater precision and visibility.",
-
-
-        pme1:
-            "Everything included in Small Business",
-
-        pme2:
-            "Track production and actual quantities obtained",
-
-        pme3:
-            "Compare theoretical and actual results",
-
-        pme4:
-            "Track cost and Brix variances",
-
-        pme5:
-            "Structure suppliers, lots and dates",
-
-        pme6:
-            "Work with multiple users",
-
-        pme7:
-            "Priority support",
-
-        choosePme:
-            "Choose SME",
-
-
-        customLabel:
-            "SPECIFIC NEEDS",
-
-        customSubtitle:
-            "For companies with specific requirements",
-
-        quote:
-            "Custom quote",
-
-        customBenefit:
-            "Your organization is unique. Your solution can be too.",
-
-
-        custom1:
-            "Features and workflows adapted to your organization",
-
-        custom2:
-            "Custom development",
-
-        custom3:
-            "Advanced user and permission management",
-
-        custom4:
-            "Integration with other systems",
-
-        custom5:
-            "Customized deployment and configuration",
-
-        custom6:
-            "Implementation support and training",
-
-        custom7:
-            "Personalized support",
-
-        contactCustom:
-            "Discuss my requirements",
 
 
         roadmapKicker:
