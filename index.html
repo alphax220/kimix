@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Kimix aide les fabricants de boissons à mieux préparer, organiser et piloter leur production."
+    >
+
+    <title>Kimix — Gestion de production pour fabricants de boissons</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="#top" class="brand">
+        <div class="brand-mark">K</div>
+        <span>Kimix</span>
+    </a>
+
+    <nav id="mainNav">
+
+        <a href="#benefits" data-i18n="navBenefits">
+            Bénéfices
+        </a>
+
+        <a href="#offers" data-i18n="navOffers">
+            Offres
+        </a>
+
+        <a href="#roadmap" data-i18n="navRoadmap">
+            À venir
+        </a>
+
+        <a href="#contact" class="nav-cta" data-i18n="navContact">
+            Nous contacter
+        </a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+        <div class="language-switch">
+
+            <button
+                class="lang-btn active"
+                data-lang="fr"
+                type="button"
+            >
+                FR
+            </button>
+
+            <span>/</span>
+
+            <button
+                class="lang-btn"
+                data-lang="en"
+                type="button"
+            >
+                EN
+            </button>
+
+        </div>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<main id="top">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-copy">
+
+        <div class="eyebrow">
+
+            <span></span>
+
+            <span data-i18n="eyebrow">
+                GESTION DE PRODUCTION POUR FABRICANTS DE BOISSONS
+            </span>
+
+        </div>
+
+
+        <h1 data-i18n="heroTitle">
+            Produisez mieux.<br>
+            <strong>Décidez plus vite.</strong>
+        </h1>
+
+
+        <p class="hero-text" data-i18n="heroText">
+            Kimix aide les fabricants de boissons à transformer leurs
+            recettes, leurs stocks et leurs objectifs de production en
+            décisions simples et concrètes.
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#offers"
+                class="btn primary"
+                data-i18n="heroCta"
+            >
+                Découvrir les offres
+            </a>
+
+            <a
+                href="#contact"
+                class="btn secondary"
+                data-i18n="heroContact"
+            >
+                Nous contacter
+            </a>
+
+        </div>
+
+
+        <div class="trust-line">
+
+            <span data-i18n="trust1">
+                ✓ Pensé pour les TPE & PME
+            </span>
+
+            <span data-i18n="trust2">
+                ✓ Simple à prendre en main
+            </span>
+
+            <span data-i18n="trust3">
+                ✓ Essai 7 jours
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- DASHBOARD VISUEL -->
+
+    <div class="hero-card">
+
+        <div class="window-top">
+
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+            <span class="window-title">
+                Kimix / Production
+            </span>
+
+        </div>
+
+
+        <div class="dashboard">
+
+            <div class="dash-head">
+
+                <div>
+
+                    <small data-i18n="dashboardLabel">
+                        OBJECTIF DE PRODUCTION
+                    </small>
+
+                    <h3 data-i18n="dashboardTitle">
+                        Préparer une production
+                    </h3>
+
+                </div>
+
+                <span
+                    class="status"
+                    data-i18n="ready"
+                >
+                    ● Prêt
+                </span>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div>
+
+                    <span data-i18n="statObjective">
+                        Objectif
+                    </span>
+
+                    <b>
+                        10 000 L
+                    </b>
+
+                </div>
+
+
+                <div>
+
+                    <span data-i18n="statAvailable">
+                        Disponible
+                    </span>
+
+                    <b>
+                        82%
+                    </b>
+
+                </div>
+
+
+                <div>
+
+                    <span data-i18n="statGap">
+                        À commander
+                    </span>
+
+                    <b>
+                        3
+                    </b>
+
+                </div>
+
+            </div>
+
+
+            <div class="production">
+
+                <div
+                    class="prod-title"
+                    data-i18n="needTitle"
+                >
+                    Besoins identifiés avant production
+                </div>
+
+
+                <div class="prod-row">
+
+                    <strong data-i18n="ingredient1">
+                        Concentré orange
+                    </strong>
+
+                    <span>
+                        120 kg
+                    </span>
+
+                    <i data-i18n="ok">
+                        Disponible
+                    </i>
+
+                </div>
+
+
+                <div class="prod-row">
+
+                    <strong data-i18n="ingredient2">
+                        Sucre
+                    </strong>
+
+                    <span>
+                        850 kg
+                    </span>
+
+                    <i
+                        class="warn"
+                        data-i18n="order"
+                    >
+                        À commander
+                    </i>
+
+                </div>
+
+
+                <div class="prod-row">
+
+                    <strong data-i18n="ingredient3">
+                        Bouteilles 1 L
+                    </strong>
+
+                    <span>
+                        10 500
+                    </span>
+
+                    <i data-i18n="ok">
+                        Disponible
+                    </i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROBLEM
+===================================================== -->
+
+<section class="problem">
+
+    <div>
+
+        <div
+            class="section-kicker"
+            data-i18n="problemKicker"
+        >
+            LE PROBLÈME
+        </div>
+
+        <h2 data-i18n="problemTitle">
+            Avant de produire, il faut savoir ce qui est réellement disponible.
+        </h2>
+
+    </div>
+
+
+    <p data-i18n="problemText">
+
+        Recettes, concentrés, réceptions, stocks,
+        conditionnements et coûts peuvent vite devenir difficiles
+        à suivre.
+
+        Kimix rassemble ces informations pour vous aider à
+        préparer votre production avant de la lancer.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section
+    class="section"
+    id="benefits"
+>
+
+    <div class="section-heading">
+
+        <div
+            class="section-kicker"
+            data-i18n="benefitsKicker"
+        >
+            CE QUE KIMIX VOUS APPORTE
+        </div>
+
+
+        <h2 data-i18n="benefitsTitle">
+            Un outil pensé autour de vos décisions de production.
+        </h2>
+
+
+        <p data-i18n="benefitsIntro">
+
+            Kimix ne se limite pas à enregistrer des informations.
+            Il vous aide à comprendre votre situation et à agir
+            au bon moment.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                01
+            </div>
+
+            <h3 data-i18n="benefit1Title">
+                Centraliser concentrés et fournisseurs
+            </h3>
+
+            <p data-i18n="benefit1Text">
+                Chaque concentré dispose d'une fiche complète (code, référence,
+                prix, conditionnement) et vos fournisseurs se synchronisent
+                automatiquement entre les fiches et l'onglet dédié —
+                zéro saisie en double, zéro oubli.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                02
+            </div>
+
+            <h3 data-i18n="benefit2Title">
+                Calculer vos recettes automatiquement
+            </h3>
+
+            <p data-i18n="benefit2Text">
+                Créez vos recettes et connaissez immédiatement la capacité
+                de production réalisable selon votre stock, ainsi que les
+                besoins en matières premières pour chacune d'elles.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                03
+            </div>
+
+            <h3 data-i18n="benefit3Title">
+                Sécuriser vos réceptions et votre stock
+            </h3>
+
+            <p data-i18n="benefit3Text">
+                Suivez vos lots avec des alertes de péremption configurables
+                et des seuils de stock bas personnalisés pour anticiper les
+                ruptures avant qu'elles ne bloquent la production.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                04
+            </div>
+
+            <h3 data-i18n="benefit4Title">
+                Décider en un coup d'œil
+            </h3>
+
+            <p data-i18n="benefit4Text">
+                Un dashboard synthétique affiche les recettes réalisables
+                avec votre stock disponible, sans calcul manuel.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                05
+            </div>
+
+            <h3 data-i18n="benefit5Title">
+                Piloter vos objectifs de production
+            </h3>
+
+            <p data-i18n="benefit5Text">
+                Définissez un objectif et laissez Kimix calculer les besoins,
+                lancez et suivez vos productions avec déduction automatique
+                du stock, et gardez une traçabilité complète de chaque production.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                06
+            </div>
+
+            <h3 data-i18n="benefit6Title">
+                Centraliser vos commandes
+            </h3>
+
+            <p data-i18n="benefit6Text">
+                Gérez vos commandes fournisseurs et leur réception dans un
+                seul outil, du besoin identifié jusqu'à la réception en stock.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                07
+            </div>
+
+            <h3 data-i18n="benefit7Title">
+                Tracer chaque action
+            </h3>
+
+            <p data-i18n="benefit7Text">
+                Un historique complet des actions, protégé par re-vérification
+                du mot de passe, renforce la traçabilité et la sécurité —
+                utile en cas de contrôle ou de litige.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                08
+            </div>
+
+            <h3 data-i18n="benefit8Title">
+                Contrôler les accès
+            </h3>
+
+            <p data-i18n="benefit8Text">
+                Authentification et gestion de licence vous permettent de
+                savoir qui utilise l'outil et sous quelles conditions.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="icon">
+                09
+            </div>
+
+            <h3 data-i18n="benefit9Title">
+                Une interface à votre image
+            </h3>
+
+            <p data-i18n="benefit9Text">
+                Thèmes clair, sombre ou personnalisé et interface multilingue :
+                une expérience adaptée aux préférences de chacun.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOGIC
+===================================================== -->
+
+<section class="logic section">
+
+    <div class="section-heading">
+
+        <div
+            class="section-kicker"
+            data-i18n="logicKicker"
+        >
+            UNE LOGIQUE SIMPLE
+        </div>
+
+        <h2 data-i18n="logicTitle">
+            De l'objectif à la décision.
+        </h2>
+
+    </div>
+
+
+    <div class="logic-grid">
+
+
+        <div class="logic-step">
+
+            <span>
+                01
+            </span>
+
+            <h3 data-i18n="logic1Title">
+                Objectif
+            </h3>
+
+            <p data-i18n="logic1Text">
+                Vous définissez le volume que vous souhaitez produire.
+            </p>
+
+        </div>
+
+
+        <div class="logic-arrow">
+            →
+        </div>
+
+
+        <div class="logic-step">
+
+            <span>
+                02
+            </span>
+
+            <h3 data-i18n="logic2Title">
+                Besoins
+            </h3>
+
+            <p data-i18n="logic2Text">
+                Kimix détermine les intrants nécessaires selon vos recettes.
+            </p>
+
+        </div>
+
+
+        <div class="logic-arrow">
+            →
+        </div>
+
+
+        <div class="logic-step">
+
+            <span>
+                03
+            </span>
+
+            <h3 data-i18n="logic3Title">
+                Disponibilités
+            </h3>
+
+            <p data-i18n="logic3Text">
+                Vous voyez ce qui est disponible et ce qui manque.
+            </p>
+
+        </div>
+
+
+        <div class="logic-arrow">
+            →
+        </div>
+
+
+        <div class="logic-step">
+
+            <span>
+                04
+            </span>
+
+            <h3 data-i18n="logic4Title">
+                Décision
+            </h3>
+
+            <p data-i18n="logic4Text">
+                Vous savez quoi préparer, quoi commander et quoi lancer.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRICING
+===================================================== -->
+
+<section
+    class="section offers"
+    id="offers"
+>
+
+    <div class="section-heading">
+
+        <div
+            class="section-kicker"
+            data-i18n="offersKicker"
+        >
+            DES OFFRES ADAPTÉES À VOTRE ACTIVITÉ
+        </div>
+
+
+        <h2 data-i18n="offersTitle">
+            Commencez avec ce dont votre entreprise a besoin.
+        </h2>
+
+
+        <p data-i18n="offersIntro">
+            Une tarification simple pour les fabricants de boissons,
+            de la petite unité à la PME structurée.
+        </p>
+
+    </div>
+
+
+    <div class="pricing-grid">
+
+
+        <!-- TPE -->
+
+        <article class="pricing-card tpe">
+
+            <div class="plan-top">
+
+                <span
+                    class="plan-label"
+                    data-i18n="tpeLabel"
+                >
+                    PETITE UNITÉ
+                </span>
+
+                <h3>
+                    Kimix TPE
+                </h3>
+
+                <p data-i18n="tpeSubtitle">
+                    Pour les petites unités de production de boissons
+                </p>
+
+            </div>
+
+
+            <div class="price">
+
+                <strong>
+                    15 000
+                </strong>
+
+                <span>
+                    FCFA / <span data-i18n="month">mois</span>
+                </span>
+
+            </div>
+
+
+            <p
+                class="price-benefit"
+                data-i18n="tpeBenefit"
+            >
+                Pour structurer votre production sans alourdir votre organisation.
+            </p>
+
+
+            <ul>
+
+                <li data-i18n="tpe1">
+                    Produisez avec une meilleure visibilité sur vos matières premières
+                </li>
+
+                <li data-i18n="tpe2">
+                    Calculez vos besoins avant de lancer une production
+                </li>
+
+                <li data-i18n="tpe3">
+                    Identifiez rapidement ce qu'il faut commander
+                </li>
+
+                <li data-i18n="tpe4">
+                    Centralisez vos recettes et vos réceptions
+                </li>
+
+                <li data-i18n="tpe5">
+                    Suivez vos objectifs et vos coûts
+                </li>
+
+                <li data-i18n="tpe6">
+                    1 utilisateur
+                </li>
+
+                <li data-i18n="tpe7">
+                    Support client via WhatsApp
+                </li>
+
+            </ul>
+
+
+            <a
+                href="#contact"
+                class="btn outline full"
+                data-i18n="chooseTpe"
+            >
+                Choisir TPE
+            </a>
+
+        </article>
+
+
+
+        <!-- PME -->
+
+        <article class="pricing-card pme featured">
+
+            <div
+                class="popular"
+                data-i18n="popular"
+            >
+                RECOMMANDÉ
+            </div>
+
+
+            <div class="plan-top">
+
+                <span
+                    class="plan-label"
+                    data-i18n="pmeLabel"
+                >
+                    ENTREPRISE EN CROISSANCE
+                </span>
+
+                <h3>
+                    Kimix PME
+                </h3>
+
+                <p data-i18n="pmeSubtitle">
+                    Pour les entreprises avec une activité de production régulière
+                </p>
+
+            </div>
+
+
+            <div class="price">
+
+                <strong>
+                    50 000
+                </strong>
+
+                <span>
+                    FCFA / <span data-i18n="month2">mois</span>
+                </span>
+
+            </div>
+
+
+            <p
+                class="price-benefit"
+                data-i18n="pmeBenefit"
+            >
+                Pour piloter une activité de production régulière avec davantage de précision.
+            </p>
+
+
+            <ul>
+
+                <li data-i18n="pme1">
+                    Tout ce qui est inclus dans TPE
+                </li>
+
+                <li data-i18n="pme2">
+                    Mieux suivre les productions et les quantités réellement obtenues
+                </li>
+
+                <li data-i18n="pme3">
+                    Comparer le théorique et le réel
+                </li>
+
+                <li data-i18n="pme4">
+                    Suivre les écarts de coûts et de Brix
+                </li>
+
+                <li data-i18n="pme5">
+                    Structurer fournisseurs, lots et dates
+                </li>
+
+                <li data-i18n="pme6">
+                    Travailler avec plusieurs utilisateurs
+                </li>
+
+                <li data-i18n="pme7">
+                    Support prioritaire
+                </li>
+
+            </ul>
+
+
+            <a
+                href="#contact"
+                class="btn primary full"
+                data-i18n="choosePme"
+            >
+                Choisir PME
+            </a>
+
+        </article>
+
+
+
+        <!-- CUSTOM -->
+
+        <article class="pricing-card custom">
+
+            <div class="plan-top">
+
+                <span
+                    class="plan-label"
+                    data-i18n="customLabel"
+                >
+                    BESOINS SPÉCIFIQUES
+                </span>
+
+                <h3>
+                    Kimix CUSTOM
+                </h3>
+
+                <p data-i18n="customSubtitle">
+                    Pour les entreprises ayant des besoins spécifiques
+                </p>
+
+            </div>
+
+
+            <div
+                class="price custom-price"
+                data-i18n="quote"
+            >
+                Sur devis
+            </div>
+
+
+            <p
+                class="price-benefit"
+                data-i18n="customBenefit"
+            >
+                Votre organisation est unique. Votre solution peut l'être aussi.
+            </p>
+
+
+            <ul>
+
+                <li data-i18n="custom1">
+                    Fonctionnalités et workflows adaptés à votre organisation
+                </li>
+
+                <li data-i18n="custom2">
+                    Développements spécifiques
+                </li>
+
+                <li data-i18n="custom3">
+                    Gestion avancée des utilisateurs et droits
+                </li>
+
+                <li data-i18n="custom4">
+                    Intégration avec d'autres systèmes
+                </li>
+
+                <li data-i18n="custom5">
+                    Déploiement et configuration personnalisés
+                </li>
+
+                <li data-i18n="custom6">
+                    Accompagnement et formation
+                </li>
+
+                <li data-i18n="custom7">
+                    Support personnalisé
+                </li>
+
+            </ul>
+
+
+            <a
+                href="#contact"
+                class="btn outline full"
+                data-i18n="contactCustom"
+            >
+                Discuter de mon besoin
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROADMAP
+===================================================== -->
+
+<section
+    class="section roadmap"
+    id="roadmap"
+>
+
+    <div class="section-heading">
+
+        <div
+            class="section-kicker"
+            data-i18n="roadmapKicker"
+        >
+            À VENIR
+        </div>
+
+
+        <h2 data-i18n="roadmapTitle">
+            Kimix continue d'évoluer avec les besoins des fabricants.
+        </h2>
+
+
+        <p data-i18n="roadmapIntro">
+            De nouvelles fonctions sont prévues pour aller plus loin
+            dans le pilotage des achats et de la production.
+        </p>
+
+    </div>
+
+
+    <div class="roadmap-grid">
+
+
+        <article class="roadmap-card">
+
+            <span>
+                💰
+            </span>
+
+            <h3 data-i18n="road1Title">
+                Devises
+            </h3>
+
+            <p data-i18n="road1Text">
+                FCFA, dollar et euro pour mieux gérer les coûts.
+            </p>
+
+        </article>
+
+
+        <article class="roadmap-card">
+
+            <span>
+                📊
+            </span>
+
+            <h3 data-i18n="road2Title">
+                Bilan théorique / réel
+            </h3>
+
+            <p data-i18n="road2Text">
+                Analysez les écarts de quantité, coût, Brix et volume.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section
+    class="cta"
+    id="contact"
+>
+
+    <div class="cta-inner">
+
+        <div>
+
+            <div
+                class="section-kicker"
+                data-i18n="ctaKicker"
+            >
+                PRÊT À ESSAYER ?
+            </div>
+
+
+            <h2 data-i18n="ctaTitle">
+                Voyez en 7 jours si Kimix peut simplifier votre production.
+            </h2>
+
+
+            <p data-i18n="ctaText">
+                Testez l'application et échangez avec notre équipe
+                pour trouver l'offre adaptée à votre activité.
+            </p>
+
+        </div>
+
+
+        <div class="cta-actions">
+
+            <!--
+                REMPLACER DOWNLOAD_URL
+                par le vrai lien de téléchargement
+            -->
+
+            <a
+                class="btn primary"
+                id="downloadBtn"
+                href="DOWNLOAD_URL"
+                data-i18n="download"
+            >
+                Télécharger Kimix — Essai 7 jours
+            </a>
+
+
+            <a
+                class="btn secondary"
+                id="whatsappBtn"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="whatsapp"
+            >
+                Nous contacter sur WhatsApp
+            </a>
+
+
+            <small data-i18n="ctaSmall">
+                Besoin d'une démonstration ou d'une offre personnalisée ?
+                Contactez-nous.
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     AGIR NETWORK
+===================================================== -->
+
+<section class="company">
+
+    <div class="company-logo">
+        A
+    </div>
+
+
+    <div>
+
+        <div
+            class="section-kicker"
+            data-i18n="propertyKicker"
+        >
+            PROPRIÉTÉ
+        </div>
+
+
+        <h2>
+            AGIR NETWORK
+        </h2>
+
+
+        <p data-i18n="propertyText">
+            Kimix est une solution développée et commercialisée
+            par AGIR NETWORK.
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-brand">
+
+        <div class="brand-mark small">
+            K
+        </div>
+
+        Kimix
+
+    </div>
+
+
+    <span data-i18n="copyright">
+        © 2026 AGIR NETWORK — Tous droits réservés.
+    </span>
+
+
+    <a
+        href="#top"
+        data-i18n="backTop"
+    >
+        Retour en haut ↑
+    </a>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
